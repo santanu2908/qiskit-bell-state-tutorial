@@ -235,13 +235,11 @@ And since probabilities must add to 100%:
 ```
 
 **Examples:**
-
-| State  | α   | β       | P(0) = α² | P(1) = β² |
-| ------ | --- | ------- | --------- | --------- | --- | --- |
-| `\|0⟩` | 1   | 0       | 100%      | 0%        |
-| `\|1⟩` | 0   | 1       | 0%        | 100%      |
-| `(     | 0⟩+ | 1⟩)/√2` | 1/√2      | 1/√2      | 50% | 50% |
-
+| State | α | β | P(\|0⟩) = α² | P(\|1⟩) = β² |
+|-------|---|---|--------------|--------------|
+| `\|0⟩` | 1 | 0 | 100% | 0% |
+| `\|1⟩` | 0 | 1 | 0% | 100% |
+| `(\|0⟩+\|1⟩)/√2` | 1/√2 | 1/√2 | 50% | 50% |
 ---
 
 ### Why √2?
@@ -299,16 +297,15 @@ Out of 1000 runs:
 
 ## Quick Reference
 
-| Concept             | Symbol / Code  | What It Does                                     |
-| ------------------- | -------------- | ------------------------------------------------ | ---------- | ----------------------------------------------- |
-| Qubit in state zero | `\|0⟩`         | Definitely 0 when measured                       |
-| Qubit in state one  | `\|1⟩`         | Definitely 1 when measured                       |
-| Superposition       | `(             | 0⟩ +                                             | 1⟩) / √2`  | 50% chance of 0 or 1                            |
-| Hadamard gate       | `qc.h(0)`      | Puts a qubit into superposition                  |
-| CNOT gate           | `qc.cx(0, 1)`  | Entangles two qubits                             |
-| Measurement         | `qc.measure()` | Collapses superposition, gives a definite result |
-| Bell State          | `(             | 00⟩ +                                            | 11⟩) / √2` | Two entangled qubits — always measured the same |
-
+| Concept | Symbol / Code | What It Does |
+|---------------------|-------------------------------|--------------------------------------------------|
+| Qubit in state zero | `\|0⟩` | Definitely 0 when measured |
+| Qubit in state one | `\|1⟩` | Definitely 1 when measured |
+| Superposition | `(\|0⟩ + \|1⟩) / √2` | 50% chance of 0 or 1 |
+| Hadamard gate | `qc.h(0)` | Puts a qubit into superposition |
+| CNOT gate | `qc.cx(0, 1)` | Entangles two qubits |
+| Measurement | `qc.measure()` | Collapses superposition, gives a definite result |
+| Bell State | `(\|00⟩ + \|11⟩) / √2` | Two entangled qubits — always measured the same |
 ---
 
 ## What's Next?
