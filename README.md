@@ -1,4 +1,4 @@
-# 🔮 Quantum Hello World — Your First Quantum Program
+# 🔮 Quantum Hello World — First Quantum Program
 
 A beginner-friendly, step-by-step guide to building your first quantum computing program using IBM's **Qiskit** Python package. Creating a **Bell State** — the quantum equivalent of "Hello, World!" — demonstrating **superposition** and **entanglement**.
 
